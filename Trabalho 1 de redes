@@ -1,0 +1,87 @@
+Ana Laura Leão Alves
+RA: 123684
+
+Questão 01
+I. A camada de Rede é responsável por transferir os pacotes da origem ao destino e fornecer ligação entre as redes. A recuperação de erros não é uma função diretamente atribuida a esta camada, mas sim a camada de transporte.
+
+II. A camada de Enlace de dados é responsável por organizar bits em frames, detectar e corrigir erros que possam ocorrer durante a transmissão dos dados e fornecer entrega nó a nó. A compressão de dados geralmente não é uma função dessa camada, mas sim de camadas como a de rede ou de transporte.
+
+III. A camada de Transporte é responsável por prover a entrega confiável demensagens de processo a processo. Criptografia e compressão de dados geralmente não são funções atribuídas diretamente a esta camada, mas sim de camadas como a de aplicação ou de segurança.
+
+Questão 2
+
+Modelo OSI
+
+- Camada Física: esta camada lida com a transmissão de dados brutos por meio de um meio de comunicação físico.
+- Camada de Enlace de Dados: responsável pela entrega de dados de uma máquina para a próxima máquina na rota. Ela fornece um meio confiável de transmissão de dados através de um único enlace de dados entre dois dispositivos de rede, como switches e bridges. Detecção de erros.
+- Camada de Rede: responsável pelo roteamento de dados entre diferentes redes. Ela fornece conectividade e seleção de rota entre dois sistemas de host que podem estar localizados em redes geograficamente distintas.
+- Camada de Transporte: fornece comunicação entre aplicações em sistemas finais. Ela garante a entrega de dados de forma ordenada, confiável e eficiente, gerenciando o controle de fluxo, controle de erro e controle de congestionamento.
+- Camada de Sessão: esta camada permite que as aplicações em diferentes hosts estabeleçam, gerenciem e terminem sessões de comunicação. Ela também oferece serviços de sincronização, checkpoint e restauração de dados.
+- Camada de Apresentação: responsável pela tradução, compressão e criptografia de dados. Ela garante que a informação seja apresentada da maneira correta para o usuário.
+- Camada de Aplicação: fornece uma interface de usuário e serviços de rede para o aplicativo. Ela permite que os aplicativos acessem os serviços de rede, como e-mail, transferência de arquivos e navegação na web.
+
+Modelo TCP/IP
+
+- Camada de Interface de Rede: equivalente à Camada Física e de Enlace de Dados do modelo OSI, lida com a transmissão de dados no nível físico e de link.
+- Camada de Internet: similar à Camada de Rede do modelo OSI, lida com o roteamento de dados entre redes diferentes, usando o protocolo IP.
+- Camada de Transporte: semelhante à Camada de Transporte do modelo OSI, fornece comunicação de host a host e lida com o controle de fluxo, controle de erro e multiplexação.
+- Camada de Aplicação: engloba aspectos das camadas de Aplicação, Apresentação e Sessão do modelo OSI. Fornece serviços de rede diretamente às aplicações, como HTTP, SMTP e FTP.
+ 
+Diferença entre OSI e TCP/IP
+
+A principal diferença entre os modelos OSI e TCP/IP reside na estrutura e no número de camadas. O modelo OSI possui sete camadas, enquanto o modelo TCP/IP tem quatro camadas. Além disso, o modelo TCP/IP é mais utilizado na prática, especialmente na Internet, enquanto o modelo OSI é mais utilizado como uma referência teórica para entender os conceitos de redes de computadores.
+
+Questão 3
+
+a) Topologia estrela, topologia anel, topologia barramento, topologia malha e topologia árvore.
+
+b)  A escolha da melhor topologia para sua rede depende de vários fatores, incluindo o tamanho da rede, o orçamento disponível, a tolerância a falhas e os requisitos de desempenho. Se sua prioridade é facilidade de gerenciamento e detecção de falhas, a topologia em estrela pode ser a melhor opção. Se você precisa de alta disponibilidade e redundância, uma topologia em malha pode ser mais adequada. Recomendo avaliar cuidadosamente esses fatores e considerar consultar um profissional de redes para determinar a melhor topologia para suas necessidades específicas.
+
+Questão 4
+
+I. Correta
+
+II. Incorreta. Uma rede MAN abrange uma área geografica confinada e bem definida, como um município ou uma região metropolitana.
+
+III. Incorreta. Uma WAN não é uma variação de uma LAN que usa tecnologia sem fio. Uma WAN é uma rede que abrange uma área geográfica extensa, como um país, continente ou globalmente, Ela conecta LANs e MANs em diferentes locais através de tecnologias de longa distância, como linhas alugadas, circuitos de satélite ou conexões de rede pública.
+
+Questão 5
+O IPv4 é o tipo de endereço IP mais comum atualmente. Ele é composto por 32 bits, divididos em quatrooctetos separados por pontos. Permite um total de aproximadamente 4,3 bilhões de endereços únicos. Já o IPv6  foi desenvolvido para substituir o IPv4 e resolver o problema da escassez de endereços. Os endereços IPv6 são compostos por 128 bits, o que permite um número praticamente ilimitado deendereços únicos. O IPv6 oferece melhorias em relação ao IPv4 em termos de segurança, eficiência e suporte a novas tecnologias, sendo cada vez mais adotado em todo o mundo.
+
+Questão 6
+Isso ocorre porque os valores nos octetos do endereço IP devem estar dentro do intervalo de 0 a 255. O octeto "311" e o "256" estão fora desse intervalo, o que torna o endereço IP inválido.
+Para resolver o problema e estabelecer uma conexão à internet, o endereço IP deve ser corrigido para que todos os valores dos octetos estejam dentro do intervalo permitido (0 a 255).
+
+Questão 7
+Endereço IP: 192.168.100.15
+Máscara de sub-rede: 255.255.0.0
+
+Questão 8
+IP em binario : 11001000.10000000.10100100.11100010
+Máscara de sub-rede em binário: 11111111.11111111.11111111.11000000
+
+AND: 11001000.10000000.10100100.11000000
+Decimal: 200.128.164.192/26
+Portanto o prefixo da rede é 26
+
+Questão 9 
+a) 11000000.10101000.00000001.00000000
+Ip da rede: 11111111.11111111.11111111.11110000
+Máscara de sub-rede: 255.255.255.240
+
+b) 2^b - 2
+   2^4 - 2
+    16 - 2
+  = 14  
+Portanto essa rede suportara 14 hosts
+
+c) 11000000.10101000.00000001.00001111
+Broadcast: 192.168.1.15
+
+Questão 10
+2^b - 2 ≥ 50
+2^6 - 2 = 62 -> suficiente para 50 host
+
+32 - 6 = 26 bits
+11111111.11111111.11111111.11000000
+Máscara de sub rede = 255.255.255.192
